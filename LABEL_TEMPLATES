@@ -1,0 +1,26 @@
+  person
+      NAME
+      TITLE
+      COMPANY
+      BIO
+
+  company
+      COMPANY
+      WEBSITE
+      ADDRESS
+      PHONE
+      DESC
+
+  company_full
+      COMPANY
+      WEBSITE
+      PHONE
+      ADDRESS
+      DESC
+      NOTES
+      CITY
+      STATE
+      ZIP
+      EMAIL
+
+
