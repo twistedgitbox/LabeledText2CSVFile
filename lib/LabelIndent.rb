@@ -26,25 +26,6 @@ class LabeltoLabelList
     labels << "TITLE"
     labels << "COMPANY"
     labels << "BIO"
-    labels << "EMAIL"
-    labels << "PHONE"
-    labels << "CATEGORY"
-
-    puts labels
-    return labels
-  end
-
-  def get_labels_speakers
-    labels = []
-    labels << "NAME"
-    labels << "TITLE"
-    labels << "COMPANY"
-    labels << "BIO"
-    labels << "EMAIL"
-    labels << "PHONE"
-    labels << "CATEGORY"
-    labels << "TOPIC"
-
     puts labels
     return labels
   end
@@ -104,8 +85,6 @@ class LabeltoLabelList
       labels = self.get_labels_person
     when "person"
         labels = self.get_labels_person
-    when "speaker", "speakers"
-        labels = self.get_labels_speakers
     when "companies"
       labels = self.get_labels_company
     when "company"
@@ -206,9 +185,9 @@ class LabeltoLabelList
     self.init_lize(filename)
     list = self.list_from_file(filename)
     list.reject! { |e| e.to_s.empty? }
-    #list.uniq!
-    #puts list
-    #abort
+    list.uniq!
+    puts list
+    abort
     label_list = self.read_in_labels(filename, list, option)
     list = @list
     return label_list

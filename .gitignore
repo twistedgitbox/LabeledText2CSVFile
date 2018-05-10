@@ -1,0 +1,18 @@
+# exclude everything
+RHYME/*
+DevLearn/*
+DONE/*
+
+export/*
+import/*
+fix/*
+
+*.csv
+*.json
+
+
+# exception to the rule
+!import/.gitkeep
+!export/.gitkeep
+!fix/.gitkeep
+

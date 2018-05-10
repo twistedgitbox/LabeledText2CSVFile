@@ -80,12 +80,16 @@ class Data_Converter
   ##=> ["make", "model", "price"]
 
   rows = newlist.map {|h| h.values_at(*headers)}
+  puts rows.class
   #=> [["nissan", "altima", nil], ["nissan", "maxima", "20,000"]]
   #CSV.generate do |csv|
   CSV.open(datafile, "a", headers: headers ) do |csv|
     csv << headers
-    rows.each do |row|
-      csv << row
+    newlist.each do |row|
+       puts row.class
+       puts row
+       csv << row
+       #csv << row.values
     end
   end
   #abort
