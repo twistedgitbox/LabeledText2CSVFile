@@ -11,7 +11,7 @@ fix/*
 *.json
 *.ods
 
-
+importdata_*
 # exception to the rule
 !import/.gitkeep
 !export/.gitkeep
