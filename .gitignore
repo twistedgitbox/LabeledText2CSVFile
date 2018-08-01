@@ -9,6 +9,7 @@ fix/*
 
 *.csv
 *.json
+*.ods
 
 
 # exception to the rule

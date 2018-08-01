@@ -13,6 +13,7 @@ class LabeltoLabelList
   def initialize
     @labels = []
     @records = []
+    @template_path = ""
     @converter = Data_Converter.new
   end
 
@@ -44,6 +45,27 @@ class LabeltoLabelList
     labels << "PHONE"
     labels << "CATEGORY"
     labels << "TOPIC"
+
+    puts labels
+    return labels
+  end
+
+  def get_labels_website_short
+    labels = []
+    labels << "WEBSITE"
+    labels << "COMPANY"
+    labels << "CATEGORY"
+
+    puts labels
+    return labels
+  end
+
+  def get_labels_website_med
+    labels = []
+    labels << "WEBSITE"
+    labels << "COMPANY"
+    labels << "CATEGORY"
+    labels << "DESC"
 
     puts labels
     return labels
@@ -99,25 +121,42 @@ class LabeltoLabelList
     labelsize = []
     label_hash = {}
     #line = "TITLE: RESULT OF NAME: DOG COMPANY:"
-    case option
-    when "people"
-      labels = self.get_labels_person
-    when "person"
-        labels = self.get_labels_person
-    when "speaker", "speakers"
-        labels = self.get_labels_speakers
-    when "companies"
-      labels = self.get_labels_company
-    when "company"
-      labels = self.get_labels_company
-    when "company_full"
-        labels = self.get_labels_company_full
-    when "companies_full"
-      labels = self.get_labels_companies_full
-    else
-      puts "Not a valid labels set"
-      abort
-    end
+    puts @template_path
+    template_path = @template_path
+    #if template_path == "" then
+    #case option
+    #when "people"
+    #  labels = self.get_labels_person
+    #when "person"
+    #  labels = self.get_labels_person
+    #when "speaker", "speakers"
+    #  labels = self.get_labels_speakers
+    #when "companies"
+    #  labels = self.get_labels_company
+    #when "company"
+    #  labels = self.get_labels_company
+    #when "company_full"
+    #  labels = self.get_labels_company_full
+    #when "companies_full"
+    #  labels = self.get_labels_companies_full
+    #when "websites_short"
+    #  labels = self.get_labels_website_short
+    #when "websites_med"
+    #  labels = self.get_labels_website_med
+    #else
+    #  puts "Not a valid labels set"
+    #  abort
+    #end
+    #elsif
+    #end
+    puts "FILE TEMPLATE GET: #{template_path}"
+    puts
+    puts "#{option}"
+    puts "NEXT STEP"
+    labels = File.readlines("#{template_path}")
+    labels.map! {|x| x.chomp }
+    labels.reject! { |c| c.empty? }
+    puts "File Array #{labels}"
     puts labels
     labels.each do |word|
       label_hash[word] = "#{word}"
@@ -139,13 +178,13 @@ class LabeltoLabelList
     puts line.class
     if line =~ /^[A-Z ]+:/ then
       line2 = line.scan(/^[A-Z ]+:/).first
-    # Place that word in array
+      # Place that word in array
       line_arr = line.scan(/^[A-Z ]+:/)
       puts "LINEARRAY #{line_arr}"
       unless line_arr[0].nil? || line_arr[0] == 0
         line_arr[0].chomp!(":")
         line2.nil? ? nil : line2.chomp!(":")
-    # check if any predefined labels match the word
+        # check if any predefined labels match the word
         if !(@labels & line_arr).empty? then
           puts "MATCHED #{line}"
           puts line2
@@ -160,7 +199,7 @@ class LabeltoLabelList
           puts line
           line.strip!
           line.chomp!
-      # addlabel and value to hash
+          # addlabel and value to hash
           @labels.each do |label|
             label_found[label] = line if label == line_arr[0]
             puts line_arr[0]
@@ -179,7 +218,7 @@ class LabeltoLabelList
     #if @labels.any? { |x| checkit.include?(x) } then
     if checkit.any? { |x| @labels.include?(x) } then
       puts "MATCHED"
-    #if checkit.any? { |s| s.include?(@labels) } then
+      #if checkit.any? { |s| s.include?(@labels) } then
       puts "CHECK#{checkit}"
       puts "LABELS-#{@labels}"
     end
@@ -194,7 +233,7 @@ class LabeltoLabelList
       puts "#{value} IS #{labelsize[index]}"
     end
     puts labelsize
-   return labelsize
+    return labelsize
   end
 
   def list_from_file(filename)
@@ -229,42 +268,42 @@ class LabeltoLabelList
     list.each do |line|
       # Check if RECORD SET
       line.chomp!.strip!
-        puts "THIS LINE #{line}"
-        puts line.class
-        puts line.length
-        unless line.nil? || line == 0
-          unless line.length == 0
-            puts "The Line Length is #{line.length}"
-            puts "LINE VALUE IS #{line}"
-            puts "LINER#{line} and #{@labels[0]}"
-            if line.start_with?("#{@labels[0]}:")
-              @labels.each_with_index do | label, index |
-                puts "HERE IS HASH##{label}"
-                if label_hash[label].nil?
-                  label_hash[label] = "NOT_FOUND"
-                end
-                puts label_hash[label]
-                puts "HERE IS HASH#"
+      puts "THIS LINE #{line}"
+      puts line.class
+      puts line.length
+      unless line.nil? || line == 0
+        unless line.length == 0
+          puts "The Line Length is #{line.length}"
+          puts "LINE VALUE IS #{line}"
+          puts "LINER#{line} and #{@labels[0]}"
+          if line.start_with?("#{@labels[0]}:")
+            @labels.each_with_index do | label, index |
+              puts "HERE IS HASH##{label}"
+              if label_hash[label].nil?
+                label_hash[label] = "NOT_FOUND"
               end
-              label_hash["LIST"] = "#{@listname}"
-              @records << label_hash
-              puts "RECORD: #{@records}"
-              label_hash = {}
+              puts label_hash[label]
+              puts "HERE IS HASH#"
             end
-            label_found = self.check_text_for_labels(line)
-            puts "Label Found #{label_found}"
-            unless label_found.empty? || label_found.nil?
-              puts "LABEL_FOUND#{label_found}"
-              label_hash.merge!(label_found)
-            end
+            label_hash["LIST"] = "#{@listname}"
+            @records << label_hash
+            puts "RECORD: #{@records}"
+            label_hash = {}
+          end
+          label_found = self.check_text_for_labels(line)
+          puts "Label Found #{label_found}"
+          unless label_found.empty? || label_found.nil?
+            puts "LABEL_FOUND#{label_found}"
+            label_hash.merge!(label_found)
           end
         end
+      end
 
-       # puts "MATCH #{line}"
-       # line2 = line[labelsize..-1]
-       # line2 = line2.strip
-       # checkarrx << line2
-     end
+      # puts "MATCH #{line}"
+      # line2 = line[labelsize..-1]
+      # line2 = line2.strip
+      # checkarrx << line2
+    end
     puts "RECORD# #{@records}"
     return @records
   end
@@ -294,7 +333,9 @@ class LabeltoLabelList
     return list
   end
 
-  def buildlist_run(filename, option)
+  def buildlist_run(filename, option, template_path)
+    @template_path = template_path
+    puts "TEMPLATE LOCATION #{@template_path}"
     newlist = self.read_labels(filename, option)
     puts "#{option.upcase} #{newlist}"
     @converter.init_lize(filename)
@@ -317,10 +358,10 @@ class LabeltoLabelList
     @converter.convert_DATA_to_CSV(newlist)
   end
 
- # def list_test(filename, label)
- #   list = self.read_labels(filename)
- #   return list
- # end
+  # def list_test(filename, label)
+  #   list = self.read_labels(filename)
+  #   return list
+  # end
 
 end
 
