@@ -1,0 +1,139 @@
+Container Management and Orchestration
+
+NAME:Docker
+SITE:https://www.docker.com/
+DESC:Docker, Inc. is the company behind the Docker open source platform, and is the chief sponsor of the Docker ecosystem. Docker is an open platform for developers and system administrators to build, ship and run distributed applications.
+
+NAME:Kubernetes
+SITE:https://kubernetes.io/partners/
+DESC: Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.
+
+NAME:OpenShift
+SITE:https://www.aquasec.com/partners/red-hat-openshift-container-security/" class="
+DESC:Red Hat OpenShift is the industry’s most secure and comprehensive enterprise-grade container platform based on industry standards, Docker and Kubernetes.
+
+NAME:Mesosphere
+SITE:https://mesosphere.com/product/
+DESC:Mesosphere Enterprise DC/OS includes everything you need to elastically run containerized apps and data services in production.
+
+NAME:Rancher
+SITE:http://rancher.com
+DESC:Rancher Labs builds innovative, open source software that makes it easy to deploy and manage containers in production on any infrastructure, enabling organizations to accelerate all aspects of their software development pipeline,
+
+NAME:Pivotal Cloud Foundry
+DESC:Aqua integrates with Pivotal Cloud Foundry to provide security for container deployments in runtime.
+
+NAME:VMware Kubernetes Engine™ (VKE)
+SITE:https://cloud.vmware.com/vmware-kubernetes-engine
+
+Cloud Providers
+
+NAME:AWS
+SITE:https://www.aquasec.com/partners/aws-container-security-ecs/" class="
+DESC:Amazon Web Services provides a highly reliable, scalable, low-cost infrastructure platform in the cloud that powers hundreds of thousands of businesses in 190 countries around the world.
+
+NAME:Azure
+SITE:https://www.aquasec.com/partners/azure-container-security-vsts/" class="
+DESC:Microsoft Azure is a growing collection of integrated cloud services—analytics, computing, database, mobile, networking, storage, and web—for moving faster, achieving more, and saving money.
+
+NAME:Google
+SITE:https://cloud.google.com/
+DESC:Google Cloud Platform enables developers to build, test and deploy applications on Google's highly-scalable and reliable infrastructure.
+
+NAME:IBM
+SITE:https://blog.aquasec.com/securing-container-deployments-on-bluemix-with-aqua-security
+DESC:Aqua secures container workloads running on IBM Bluemix, detecting suspicious behavior and preventing container-based attacks.
+
+DevOps Tools
+
+NAME:JFrog
+SITE:https://www.jfrog.com/
+DESC:More than 2,500 paying customers, 60,000 installations and millions of developers globally rely on JFrog’s world-class infrastructure for software management and distribution.
+
+NAME:Slack
+
+NAME:Jira
+
+Security Technology
+
+NAME:HPE
+SITE:https://h20195.www2.hpe.com/V2/GetDocument.aspx?docname=a00020438enw
+DESC:Aqua works seamlessly with HPE's Synergy servers to secure container deployments on Windows or Linux private cloud infrastructure.
+
+NAME:VMWAre
+SITE:https://blog.aquasec.com/aqua-integration-with-vmware-for-hybrid-vm-and-container-security
+DESC:Aqua integrates with VMWare's next generation network and virtualization security products to provide full visibility and control over container workloads.
+
+NAME:Splunk
+SITE:https://splunkbase.splunk.com/app/3529/
+DESC: Splunk produces software for searching, monitoring, and analyzing machine-generated big data.
+
+NAME:HashiCorp
+SITE:https://www.hashicorp.com/vault.html
+DESC:HashiCorp solves development, operations, and security challenges in infrastructure so organizations can focus on business-critical tasks. Aqua integrates with HashiCorp Vault for secret management in containers.
+
+NAME:CyberArk
+SITE:https://www.cyberark.com
+DESC:Aqua integrates with CyberArk's Enterprise Password Vault to securely deliver and manage secrets in container environments.
+
+NAME:Palo Alto Networks
+SITE:https://www.paloaltonetworks.com/
+DESC:Aqua integrates with Palo Alto Networks to provide granular  visibility into container-based applications, with automated policy enforcement to prevent attacks.
+
+NAME:MicroFocus
+SITE:https://software.microfocus.com/en-us/software/siem-security-information-event-management
+DESC:Aqua integrates with MicroFocus ArcSight to allow monitoring, detection, and forensics of container-based attacks and security issues
+
+NAME:Sumologic
+SITE:https://www.sumologic.com/
+DESC:Sumo Logic is the industry’s leading secure, cloud-native, machine data analytics service, delivering real-time, continuous intelligence across the entire application lifecycle and stack.
+
+NAME:WhiteSource
+SITE:https://whitesourcesoftware.com/
+DESC:WhiteSource effortlessly secures and manages open source usage. It automatically identifies all open source components in your software, every time you run your build, provides real-time alerts and generate comprehensive reports within minutes.
+
+NAME:Carahsoft
+SITE:http://www.carahsoft.com/vendors/aqua
+DESC:Carahsoft Technology Corp. is The Trusted Government IT Solutions Provider™. As a top-performing GSA Schedule and SEWP contract holder, Carahsoft serves as the master government aggregator for many of its best-of-breed technology vendors.
+
+NAME:Qualys
+SITE:https://www.qualys.com
+DESC:Aqua integrates with Qualys to streamline container vulnerability, risk assessment and compliance.
+
+CI/CD Integrations
+
+NAME:Jenkins
+SITE:https://github.com/jenkinsci/aqua-security-scanner-plugin
+
+NAME:VSTS
+SITE:https://marketplace.visualstudio.com/items?itemName=aquasec.aquasec
+
+NAME:Bamboo
+SITE:https://marketplace.atlassian.com/plugins/aqua-scanner.aqua-scanner/server/overview
+
+NAME:TeamCity
+
+NAME:GoCD
+
+NAME:GitLab
+
+Solution Providers
+
+System Integrators and Consultants
+
+NAME:Accenture
+SITE:https://www.accenture.com/il-en/home
+
+NAME:HCL
+SITE:https://www.hcltech.com/
+
+NAME:Cognizant
+SITE:https://www.cognizant.com/
+
+Managed Service Providers (MSP)
+
+NAME:Hitachi Vantara
+SITE:https://www.hitachivantara.com/en-us/solutions/hybrid-cloud/enterprise-cloud.html
+DESC:Hitachi Vantara enhances cloud services with container security in partnership with Aqua Security to create a comprehensive and secure container solution; multicloud management and one-click Kubernetes deployments.
+
+

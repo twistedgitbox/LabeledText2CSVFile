@@ -1,0 +1,121 @@
+NAME:Apache Foundation
+DESC:The mission of the Apache Software Foundation (ASF) is to provide software for the public good. This includes providing services and support for over 200 software project communities who choose to join the ASF.
+SITE:https://www.apache.org
+
+NAME:Cloud Foundry Foundation
+DESC:Cloud Foundry is an open source application platform for developing and deploying containerized applications in a standard way across multiple cloud technologies.
+SITE:https://www.cloudfoundry.org/foundation
+
+NAME:Cloud Native Computing Foundation
+DESC:The Cloud Native Computing Foundation (CNCF) is a nonprofit organization committed to advancing the development of cloud native technology and services by creating a set of common container technologies designed around technical merit and end user value. Google is a founding member and contributed the Kubernetes container management system.
+SITE:https://www.cncf.io
+
+NAME:Eclipse Foundation
+DESC:Eclipse provides IDEs and platforms for nearly every programming language and architecture.  It encompasses an extensible platform for creating desktop, web, and cloud IDEs.
+SITE:https://eclipse.org
+
+NAME:FOSDEM
+DESC:FOSDEM is the largest free and non-commercial annual event for open source developers organized by the community for the community. The conference takes place annually in Brussels with over 6,000 attendees. The conference enables developers to stay informed about the latest developments in the free software world as well as attend talks on various topics by project leaders and participants.
+SITE:https://fosdem.org" class="text-btn" data-g-event="Community_Affiliations" data-g-action="Click" data-g-label="Visit FOSDEM
+
+NAME:Free Software Foundation Europe
+DESC:FSF Europe is a non profit organization working to create general understanding and support for software freedom in Europe. Google is a proud member and supporter of their internship program.
+SITE:https://fsfe.org
+
+NAME:GNOME Foundation
+DESC:The GNOME Foundation works to further the goal of the GNOME Project to create a free software computing platform for the general public that is designed to be elegant, efficient, and easy to use.  The Gnome project and community have been very active in the Google Summer of Code program since it began in 2005.
+SITE:https://www.gnome.org
+
+NAME:KDE
+DESC:KDE is an international team co-operating on development and distribution of free and open source software for desktop and portable computing, focused around a powerful graphical desktop environment.  The KDE Community has been an active contributor to Google Summer of Code and Google Code-in for many years.
+SITE:https://www.kde.org
+
+NAME:Linux Foundation
+DESC:The Linux Foundation is a trade association dedicated to fostering the growth of the Linux operating system and related projects. The Linux Foundation promotes, protects, and standardizes Linux "by providing a comprehensive set of services to compete effectively with closed platforms" and promoting standardization and technical collaboration.
+SITE:https://www.linuxfoundation.org
+
+NAME:Linux Kernel Summit
+DESC:The Linux Kernel Summit is an invite-only annual event, run by the Linux Foundation, bringing together the world's leading core kernel developers to discuss the state of the existing kernel and plan the next development cycle.
+SITE:http://events.linuxfoundation.org/events/linux-kernel-summit" class="text-btn" data-g-event="Community_Affiliations" data-g-action="Click" data-g-label="Visit Linux Kernel Summit
+
+NAME:LLVM Foundation
+DESC:The LLVM Project is an umbrella for a collection of modular and reusable compiler and toolchain technologies. Google uses several languages built on top of LLVM technologies.
+SITE:http://llvm.org
+
+NAME:LWN.net
+DESC:LWN.net aims to be the premier news and information source for the free software community. It provides comprehensive coverage of development, legal, commercial, and security issues.
+SITE:https://lwn.net
+
+NAME:MetaBrainz Foundation
+DESC:MetaBrainz is a leading open source and open data project focused on music and art.  They attract many new contributors to open source and are a long term Google Summer of Code mentoring organization.
+SITE:https://metabrainz.org
+
+NAME:MIT Innovation Lab
+DESC:Google helps support the work of this ground-breaking research lab discovering and exploring patterns in the sources of innovation and develops new processes to improve the "fuzzy front end" of the innovation process: the end where ideas for breakthrough new products and services are developed.
+SITE:https://innovation.mit.edu
+
+NAME:Node.js Foundation
+DESC:The Node.js Foundation's mission is to enable widespread adoption and help accelerate development of Node.js and other related modules through an open governance model that encourages participation, technical contribution, and a framework for long term stewardship by an ecosystem invested in Node.js' success.
+SITE:https://nodejs.org/en/foundation
+
+NAME:NumFOCUS
+DESC:NumFOCUS is a non-profit that provides a stable, independent, and professional home for open source scientific computing projects. NumFOCUS's educational programs and events, such as the global PyData network, aim to increase collaboration and communication within the data science and scientific computing community.
+SITE:https://www.numfocus.org
+
+NAME:OpenCAPI Consortium
+DESC:The OpenCAPI Consortium is an open forum created to manage the OpenCAPI (Coherent Accelerator Processor Interface) specification for servers and the eventual ecosystem.  Google is a founding member and contributes technical guidance for the development of the specification.
+SITE:http://opencapi.org
+
+NAME:Open Compute Foundation
+DESC:The Open Compute Foundation drives datacenter technology to be more efficient, flexible, and scalable.  Google believes in all of these goals.  We hope that by SITE:https://cloudplatform.googleblog.com/2016/03/Google-joins-Open-Compute-Project-to-drive-standards-in-IT-infrastructure.html
+NAME:contributing
+SITE:https://www.opencompute.org
+
+NAME:Open Geospatial Consortium
+DESC:The OGC (Open Geospatial Consortium) is an international organization committed to making quality open standards for the global geospatial community. These standards are made through a consensus process and are freely available for anyone to use to improve sharing of the world's geospatial data.
+SITE:http://www.opengeospatial.org
+
+NAME:Open Power Foundation
+DESC:The OpenPOWER Foundation is an open technical membership organization that enables members to customize and optimize POWER CPU processors and system platforms for their specific needs.  Google is a founding member of the Foundation, and regularly contributes technical guidance as well as hardware design specifications.
+SITE:https://openpowerfoundation.org
+
+NAME:OSCON
+DESC:OSCON is an annual conference that celebrates, explains, and demonstrates the power of open source technologies and communities. Topics range from the inception of languages and frameworks up through their use in the enterprise.
+SITE:http://oscon.com" class="text-btn" data-g-event="Community_Affiliations" data-g-action="Click" data-g-label="Visit OSCON
+
+NAME:OSU Open Source Lab
+DESC:The Open Source Lab, in partnership with the School of Electrical Engineering and Computer Science at Oregon State University, provides hosting for hundreds of open source projects.
+SITE:http://osuosl.org
+
+NAME:PyCon
+DESC:PyCon is the largest annual gathering for the community that uses and develops the open-source Python programming language. PyCon is organized by and for the Python community. Through PyCon, the PSF advances its mission of growing the international community of Python programmers.
+SITE:https://us.pycon.org/2017
+
+NAME:Python Software Foundation
+DESC:Python is a very popular high-level programming language for general-purpose programming. It is widely used at Google. The Python Software Foundation promotes and advances the Python programming language.  It also supports and facilitates the growth of a diverse international community of Python developers.
+SITE:https://www.python.org
+
+NAME:R Consortium
+DESC:The R language is an open source environment for statistical computing and graphics, and runs on a wide variety of computing platforms. The R Consortium works with and provides support to key organizations developing, maintaining, distributing and using R. Google uses R in a wide variety of internal projects.
+SITE:https://www.r-consortium.org
+
+NAME:Schema.org
+DESC:Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond. A shared vocabulary makes it easier for webmasters and developers to decide on a schema and for users to get the maximum benefit.
+SITE:http://schema.org
+
+NAME:Software Freedom Conservancy
+DESC:The Conservancy provides a non-profit home and infrastructure for more than 40 free and open source software projects.  Their work as the fiscal agent for many of the Google Summer of Code mentoring organizations is a huge help to Google.  Google is also proud to sponsor Conservancy's ongoing copyleft compliance work.
+SITE:https://sfconservancy.org
+
+NAME:Standard C++ Foundation
+DESC:C++ is a venerable yet still widely used and deeply influential general-purpose programming language.  It is widely used at Google and has been since the company's beginning.
+SITE:https://isocpp.org
+
+NAME:TODO Group
+DESC:TODO is an open group of companies who want to collaborate on practices, tools, and other ways to run successful and effective open source projects and programs.
+SITE:http://todogroup.org
+
+NAME:Undergraduate Capstone Open Source Projects
+DESC:UCOSP is an academic program that brings together students from across Canada to work together on open source projects. Students learn how open source software development takes place, practice distributed development, and have the opportunity to work on projects with knowledgeable industry or faculty mentors.
+SITE:http://ucosp.ca
+
