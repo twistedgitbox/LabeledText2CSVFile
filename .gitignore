@@ -2,10 +2,14 @@
 RHYME/*
 DevLearn/*
 DONE/*
+DevLearn*
+devlearn*
+./*2018
 
 export/*
 import/*
 fix/*
+raw_files/*
 
 *.csv
 *.json
